@@ -1,0 +1,24 @@
+/*load external font*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2d3c49;
+    font-weight: 300;
+}
+
+.text-muted {
+    color: #7d97ad;
+    font-weight: 300;
+}
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.title-logo {
+    margin-top: 20px;
+}
