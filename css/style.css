@@ -1,15 +1,28 @@
 /*load external font*/
+
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+/*body style*/
+
 body {
     font-family: 'Lato', sans-serif;
     color: #2d3c49;
     font-weight: 300;
 }
 
+
+/* horizontal line style*/
+
+hr {
+    height: 5px;
+    background-color: #7d97ad;
+}
+
 .text-muted {
     color: #7d97ad;
     font-weight: 300;
 }
+
 .text-thin {
     font-weight: 100;
 }
@@ -19,6 +32,24 @@ body {
     font-weight: 300;
 }
 
-.title-logo {
-    margin-top: 20px;
+.display-work {
+    text-align: center;
+}
+
+
+/* logo styles */
+
+.glyphicon-king {
+    padding-top: 20px;
+    font-size: 100px;
+    color: #02b3e4;
+}
+
+@media (max-width: 992px) {
+    picture img {
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
