@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <title>Portfolio</title>
-    <!--meta data-->
+    <!--Meta data-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,37 +34,95 @@
             </div>
         </div>
         <hr>
+        <!-- main site image -->
         <div class="main-image row">
             <div class="col-md-12">
-                <img src="images/main.jpg" alt="main site image" class="img-responsive">
+                <img src="images/main.jpg" srcset="images/main-600_600w.jpg 600w, images/main.jpg 800w" sizes="(min-width: 600px) 100vw" 
+                  alt="main site image" class="img-responsive">
             </div>
         </div>
+        <!--show case header-->
         <div class="featured-head row">
             <div class="col-md-12">
                 <h2 class="text-muted">Featured Work</h2>
             </div>
         </div>
+        <!-- work display row -->
         <div class="display-work row">
             <div class="col-md-4">
-                <picture>
-                    <img src="images/portfolio.svg" alt="project image" class="img-responsive" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                <picture data-toggle="modal" data-target="#porModal">
+                    <source srcset="images/portfolio-200_200w.jpg" media="(max-width: 991px)">
+                    <img src="images/portfolio.jpg" alt="project image" class="img-responsive" data-toggle="tooltip" data-placement="top" title="Click for more details">
                 </picture>
                 <h3>Portfolio Site</h3>
                 <a href="https://github.com/evosweet/portfolio_site">https://github.com/evosweet/portfolio_site</a>
             </div>
             <div class="col-md-4">
-                <picture>
-                    <img src="images/movie.png" alt="project image" class="img-responsive" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                <picture data-toggle="modal" data-target="#movModal">
+                    <source srcset="images/movie-200_200w.jpg" media="(max-width: 991px)">
+                    <img src="images/movie.jpg" alt="project image" class="img-responsive" data-toggle="tooltip" data-placement="top" title="Click for more details">
                 </picture>
                 <h3>Movie Site</h3>
                 <a href="https://github.com/evosweet/movie_site">https://github.com/evosweet/movie_site</a>
             </div>
             <div class="col-md-4">
-                <picture>
-                    <img src="images/reports.svg" alt="project image" class="img-responsive" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                <picture data-toggle="modal" data-target="#repModal">
+                    <source srcset="images/reports-200_200w.jpg" media="(max-width: 991px)">
+                    <img src="images/reports.jpg" alt="project image" class="img-responsive" data-toggle="tooltip" data-placement="top" title="Click for more details">
                 </picture>
                 <h3>Reporting Site</h3>
                 <a href="https://github.com/evosweet/imperial_report">https://github.com/evosweet/imperial_report</a>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal -->
+    <div class="modal fade" id="porModal" tabindex="-1" role="dialog" aria-labelledby="porModalLabel">
+        <div class="modal-dialog" role="dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="porModalLabel">Portfolio</h4>
+                </div>
+                <div class="modal-body">
+                    <p>A website built to show off my Programing skills</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Movie Modal -->
+    <div class="modal fade" id="movModal" tabindex="-1" role="dialog" aria-labelledby="movModalLabel">
+        <div class="modal-dialog" role="dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="movModalLabel">Movie</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Movie trailer website</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reporting Modal -->
+    <div class="modal fade" id="repModal" tabindex="-1" role="dialog" aria-labelledby="repModalLabel">
+        <div class="modal-dialog" role="dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="repModalLabel">Reporting</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Citizen reports System</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
